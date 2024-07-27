@@ -72,7 +72,7 @@ gsap.from(".about .left",{
 });
 
 gsap.from(".about .right",{
-    x:50,
+    y:50,
     opacity:0,
     duraiton:.8,
     scrollTrigger: {

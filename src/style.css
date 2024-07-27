@@ -30,7 +30,9 @@
     filter: grayscale(0);
   }
 
-
+body{
+  overflow-x: hidden;
+}
 
 
 
