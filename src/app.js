@@ -3,6 +3,12 @@ const menu = document.querySelector(".menu");
 const inpName = document.querySelector(".inpName");
 const inpMail = document.querySelector(".inpMail");
 const inpMsg = document.querySelector(".inpMsg");
+const darkMode = document.querySelector('.dark-mode');
+
+
+
+
+
 
 const phoneNumber = "+923175080524";
 
@@ -16,19 +22,19 @@ const handleClick = () => {
 const tl2 = gsap.timeline();
 const tl = gsap.timeline();
 
-// tl.from(".myName h1", {
-//   opacity: 0,
-//   y: 30,
-//   duration: 1,
-//   delay: 0.2,
-//   stagger: 0.2,
-// });
+tl.from(".myName h1", {
+  opacity: 0,
+  y: 30,
+  duration: 1,
+  delay: 0.2,
+  stagger: 0.2,
+});
 
-// tl.to(".loader", {
-//   top: "-100%",
-//   duration: 0.9,
-//   ease: "power1.out",
-// });
+tl.to(".loader", {
+  top: "-100%",
+  duration: 0.9,
+  ease: "power1.out",
+});
 
 tl.from(".logo", {
   y: 30,
@@ -36,12 +42,14 @@ tl.from(".logo", {
   duration: ".8",
 });
 
-tl.from(".navLis", {
-  y: 30,
-  opacity: 0,
-  duration: 1,
-  stagger: "0.3",
-});
+if(window.innerWidth > 650){
+  tl.from(".navLis", {
+    y: 30,
+    opacity: 0,
+    duration: 1,
+    stagger: "0.3",
+  });
+}
 
 tl.from(".upper", {
   x: 50,
@@ -83,16 +91,33 @@ gsap.from(".about .left", {
   },
 });
 
-gsap.from(".about .right", {
-  y: 50,
-  opacity: 0,
-  duraiton: 0.8,
-  scrollTrigger: {
-    scroller: "body",
-    trigger: ".about",
-    start: "top 55%",
-  },
-});
+if(window.innerWidth < 650){
+  gsap.from(".about .right", {
+    y: 50,
+    opacity: 0,
+    duraiton: 0.8,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".about",
+      start: "top 55%",
+    },
+  });
+}
+if(window.innerWidth > 650){
+  gsap.from(".about .right", {
+    x: 100,
+    opacity: 0,
+    duraiton: 0.8,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".about",
+      start: "-60% 55%",
+      end:"-40%",
+      scrub: 2,
+    },
+  });
+}
+
 
 gsap.from(".skillsHead", {
   y: 30,
