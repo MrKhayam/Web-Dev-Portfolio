@@ -5,7 +5,7 @@ const inpMail = document.querySelector('.inpMail');
 const inpMsg = document.querySelector('.inpMsg');
 
 
-    const phoneNumber = '03175080524';
+    const phoneNumber = '+923175080524';
     // const message = encodeURIComponent(inpMsg.value);
     // const userName = encodeURIComponent(inpName.value);
     // const email = encodeURIComponent(inpMail.value);
