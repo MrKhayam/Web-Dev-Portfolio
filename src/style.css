@@ -2,6 +2,8 @@
 .myName h1{
   font-family: "Dancing Script", sans-serif;
 }
+
+
 .left img {
     --color: #000000; /* the border color */
     --border: 10px;   /* the border thickness*/

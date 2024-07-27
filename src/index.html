@@ -37,15 +37,15 @@
 
     <nav class="w-full fixed top-0 h-auto z-40">
         <div class="navbar bg-[#ffffff41] backdrop-blur-sm shadow md:w-[80%] w-[95%] flex items-center justify-between mx-auto md:px-10 px-4 py-5 rounded-lg mt-5">
-            <div class="logo">
+            <div  class="logo">
                 <h1 class="text-lg font-bold">KI.</h1>
             </div>
             <ul class="listsParent md:flex hidden gap-10 text-md">
-                <li class="cursor-pointer navLis">Home</li>
-                <li class="cursor-pointer navLis">About</li>
-                <li class="cursor-pointer navLis">Skills</li>
-                <li class="cursor-pointer navLis">Projects</li>
-                <li class="cursor-pointer navLis">Contact</li>
+                <li class="cursor-pointer navLis"><a class="home-sec" href="#home">Home</a></li>
+                <li class="cursor-pointer navLis"><a href="#about" class="about-sec">About</a></li>
+                <li class="cursor-pointer navLis"><a class="skills-sec" href="#skills">Skills</a></li>
+                <li class="cursor-pointer navLis"><a class="projects-sec" href="#projects">Projects</a></li>
+                <li class="cursor-pointer navLis"><a class="contact-sec" href="#contact">Contact</a></li>
             </ul>
             <div class="md:hidden block"><i class="menu md:hidden text-lg font-bold ri-menu-3-fill"></i></div>
         </div>
@@ -139,7 +139,7 @@
 
     <h1 class="text-center skillsHead mt-12 text-5xl font-bold">Skills</h1>
 
-    <div class="skillLine1 skillLine md:mt-20 md:flex-row flex-col flex items-center justify-center mt-12 gap-4">
+    <div id="skillLineScroll" class="skillLine1 skillLine md:mt-20 md:flex-row flex-col flex items-center justify-center mt-12 gap-4">
         <h1 class="md:px-24 md:w-auto w-full text-center text-lg font-semibold py-2 border border-black rounded-full">HTML</h1>
         <h1 class="md:px-24 md:w-auto w-full text-center text-lg font-semibold py-2 border border-black rounded-full">CSS</h1>
         <h1 class="md:px-24 md:w-auto w-full text-center text-lg font-semibold py-2 border border-black rounded-full">JAVASCRIPT</h1>
@@ -221,15 +221,15 @@
 <h1 id="contact" class="text-center text-5xl font-bold mt-24">Contact</h1>
 <div class="contact md:w-[80%] w-[90%] mx-auto mt-14  h-auto">
     <div class="flex md:flex-row flex-col md:gap-3 gap-2 w-full items-center justify-center">
-        <input placeholder="Name" class="bg-[#dadada] md:w-[40%] w-full px-4 py-3 outline-none rounded-lg font-['Poppins']" type="text">
-        <input placeholder="Email" class="bg-[#dadada] md:w-[40%] px-4 w-full py-3 outline-none rounded-lg font-['Poppins']" type="text">
+        <input placeholder="Name" class="bg-[#dadada] inpName md:w-[40%] w-full px-4 py-3 outline-none rounded-lg font-['Poppins']" type="text">
+        <input placeholder="Email" class="bg-[#dadada] inpMail md:w-[40%] px-4 w-full py-3 outline-none rounded-lg font-['Poppins']" type="text">
     </div>
     <div class="flex items-center justify-center">
-        <textarea placeholder="Enter Your Message. . ." rows="4" cols="50" class="bg-[#dadada] font-['Poppins']  md:mt-3 mt-2 rounded-lg resize-none outline-none px-3 md:w-[81%] w-full py-3"></textarea>
+        <textarea placeholder="Enter Your Message. . ." rows="4" cols="50" class="bg-[#dadada] inpMsg font-['Poppins']  md:mt-3 mt-2 rounded-lg resize-none outline-none px-3 md:w-[81%] w-full py-3"></textarea>
     </div>
     <div class="flex items-center justify-center">
         <div class="flex w-[150px] cursor-pointer justify-center py-3 rounded-lg gap-1 bg-black mt-6 text-white items-center ">
-            <button class="text-lg font-semibold">Send</button>
+            <button onclick="handleClick()" class="text-lg font-semibold">Send</button>
             <i class="font-semibold ri-arrow-right-line"></i>
         </div>
     </div>
@@ -247,17 +247,14 @@
 <div class="footer md:w-[80%] w-[90%] bg-[#dadada] h-60 mt-24 rounded-t-3xl mx-auto flex flex-col justify-center items-center">
     <p class="md:w-[40%] w-[80%] md:text-sm text-center text-sm">Thank you for visiting my portfolio! Let's connect and create something amazing together. Feel free to reach out via email or connect with me on social media.</p>
     <div class="flex w-full items-center mt-3 justify-center gap-3">
-        <a href="">
+        <a href="https://github.com/mrkhayam">
             <i  class="text-xl ri-github-fill"></i>
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/khayam-ijaz-5728712a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
             <i  class="text-xl ri-linkedin-fill"></i>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/fitness_hub369?igsh=MXB6ZDhycDV3bGFlNQ==">
             <i  class="text-xl ri-instagram-fill"></i>
-        </a>
-        <a href="">
-            <i  class="text-xl ri-whatsapp-fill"></i>
         </a>
     </div>
 </div>
