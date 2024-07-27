@@ -6,12 +6,12 @@ const inpMsg = document.querySelector('.inpMsg');
 
 
     const phoneNumber = '03175080524';
-    const message = encodeURIComponent(inpMsg.value);
-    const userName = encodeURIComponent(inpName.value);
-    const email = encodeURIComponent(inpMail.value);
+    // const message = encodeURIComponent(inpMsg.value);
+    // const userName = encodeURIComponent(inpName.value);
+    // const email = encodeURIComponent(inpMail.value);
   
     const handleClick = () => {
-        window.open(`https://wa.me/${phoneNumber}?text= Name : ${userName}, Email : ${email}, Message : ${message}`, '_blank');
+        window.open(`https://wa.me/${phoneNumber}?text= Name : ${inpName.value}, Email : ${inpMail.value}, Message : ${inpMsg.value}`, '_blank');
     };
 
 
