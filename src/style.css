@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+.myName h1{
+  font-family: "Dancing Script", sans-serif;
+}
 .left img {
     --color: #000000; /* the border color */
     --border: 10px;   /* the border thickness*/
@@ -25,8 +29,6 @@
     background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
     filter: grayscale(0);
   }
-
-
 
 
 
